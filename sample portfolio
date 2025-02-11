@@ -1,0 +1,47 @@
+import React from "react";
+import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Mail, Github, Linkedin } from "lucide-react";
+
+const Portfolio = () => {
+  return (
+    <div className="min-h-screen bg-gray-100 flex flex-col items-center p-6">
+      <header className="text-center mb-8">
+        <h1 className="text-4xl font-bold text-gray-800">N.Darshan Raju</h1>
+        <p className="text-gray-600 text-lg">AI & Cybersecurity Enthusiast | Ethical Hacker</p>
+      </header>
+      
+      <section className="max-w-3xl w-full mb-8">
+        <h2 className="text-2xl font-semibold text-gray-700 mb-4">About Me</h2>
+        <p className="text-gray-600">
+          I'm passionate about AI, cybersecurity, and ethical hacking. Always learning, building, and exploring new technologies.
+        </p>
+      </section>
+      
+      <section className="max-w-3xl w-full mb-8">
+        <h2 className="text-2xl font-semibold text-gray-700 mb-4">I'm just started projects</h2>
+        <Card className="p-4 mb-4">
+          <h3 className="text-xl font-medium text-gray-800">Portfolio</h3>
+          <p className="text-gray-600">This Portfolio is my first project.</p>
+        </Card>
+      </section>
+      
+      <section className="max-w-3xl w-full mb-8">
+        <h2 className="text-2xl font-semibold text-gray-700 mb-4">9121900569</h2>
+        <div className="flex gap-4">
+          <Button variant="outline">
+            <Mail className="w-5 h-5 mr-2" /> Email (darshanraju587@gmail.com)
+          </Button>
+          <Button variant="outline">
+            <Github className="w-5 h-5 mr-2" /> GitHub (darshanraju85)
+          </Button>
+          <Button variant="outline">
+            <Linkedin className="w-5 h-5 mr-2" /> LinkedIn (www.linkedin.com/in/darshan-raju-75919926b)
+          </Button>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Portfolio;
